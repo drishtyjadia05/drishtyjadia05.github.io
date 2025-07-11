@@ -2,35 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Drishty Jadia – Master's Student in Physics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drishty B. Jadia</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      height: 100%;
+    }
+
+    .background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: url("your-background.jpg") no-repeat center center;
+      background-size: cover;
+      filter: brightness(69%) contrast(140%) opacity(0.89);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    header nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #9ec1ff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 80px);
+      padding: 0 10%;
+      color: white;
+    }
+
+    .photo-placeholder {
+      width: 200px;
+      height: 200px;
+      background-color: black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .bio-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+      }
+
+      .photo-placeholder {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="background"></div>
+
   <header>
-    <h1>Drishty Jadia</h1>
-    <p>Master’s Student in Physics</p>
-    <p class="tagline">Exploring the Universe One Equation at a Time</p>
+    <div>DRISHTY B. JADIA</div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="cv.pdf">Curriculum Vitae</a>
-      <a href="explorations.html">Light & Line</a>
-      <a href="contact.html">Send a signal</a>
+      <a href="index.html">HOME</a>
+      <a href="research.html">RESEARCH</a>
+      <a href="cv.pdf">CV</a>
+      <a href="explorations.html">LIGHT & LINE</a>
+      <a href="contact.html">SEND A SIGNAL</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome!</h2>
-      <p>This is the academic homepage of Drishty Jadia, a physics student passionate about astrophysics, large-scale surveys, and cosmic exploration.</p>
-    </section>
+  <main class="container">
+    <div class="photo-placeholder">PHOTO</div>
+    <div class="bio-text">
+      <p>
+        I’m Drishty Jadia, a physics student from IIT Kanpur with a deep curiosity about the universe and the tools we use to study it. Over the past few years, I’ve found myself drawn toward the skies — not just figuratively, but through work in radio astronomy, high-energy astrophysics, and citizen science.
+      </p>
+      <p>
+        What drives me is the process of learning by doing: piecing together radio transients across survey epochs, analyzing X-ray jets from distant galaxies, and spending nights debugging data pipelines until things finally align.
+      </p>
+      <p>
+        I hope to pursue a PhD in astrophysics abroad, where I can continue exploring galaxies, variability, and instrumentation — and grow into a researcher who builds, questions, and mentors with clarity and curiosity.
+      </p>
+    </div>
   </main>
-
-  <footer>
-    <p>© 2025 Drishty Jadia</p>
-  </footer>
 </body>
 </html>
