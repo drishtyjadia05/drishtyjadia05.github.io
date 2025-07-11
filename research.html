@@ -5,6 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research – Drishty Jadia</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      padding-top: 1rem;
+    }
+
+    .project-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .project-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .project-title a {
+      text-decoration: none;
+      color: #336699;
+    }
+
+    .project-title a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,25 +56,61 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="research.html">Research</a>
-      <a href="cv.pdf">CV</a>
-      <a href="explorations.html">Explorations</a>
-      <a href="contact.html">Contact</a>
+      <a href="cv.pdf">Curriculum Vitae</a>
+      <a href="explorations.html">Light & Line</a>
+      <a href="contact.html">Send a signal</a>
     </nav>
   </header>
 
   <main>
     <section>
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>[Project Title]</strong> — [Short description with methods used]</li>
-        <h3>Radio Transients in COSMOS & STRIPE82 Surveys</h3>
-<p>
-  Created 300+ multi-epoch radio mosaics using VLA-COSMOS and STRIPE82 datasets to identify transient candidates and study variability. Used AIPS, CASA, and PyBDSF for calibration, imaging, and light curve generation. Ongoing thesis work focused on source classification and variability trends.
-  <br />
-  <a href="https://drive.google.com/file/d/1Hgh0jsdZPJaCpdjK-ihLNMxB41FT28J3/view?usp=sharing" target="_blank">[Report]</a>
-</p>
+      <p>My research spans radio transients, VLBI, AGN physics, and pulsar signal processing. Each project below links to a detailed write-up, where you’ll find background, methods, and references.</p>
+    </section>
 
-      </ul>
+    <section class="project-grid">
+
+      <div class="project-card">
+        <img src="img_radio.jpg" alt="Radio Transients" />
+        <div class="project-title">
+          <a href="project-radio.html">Radio Transients in COSMOS & STRIPE82 Surveys</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img_grg.jpg" alt="GRG Central Engines" />
+        <div class="project-title">
+          <a href="project-grg.html">Unraveling the Central Engines of Giant Radio Galaxies</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img_vlbi.jpg" alt="VLBI with Indian Arrays" />
+        <div class="project-title">
+          <a href="project-vlbi.html">Experimental VLBI using NCRA 15m, GMRT & ORT</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img_xray.jpg" alt="X-ray Jets" />
+        <div class="project-title">
+          <a href="project-jets.html">Extended X-ray Jets in Radio Galaxies</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img_pulsar.jpg" alt="Pulsar Processing" />
+        <div class="project-title">
+          <a href="project-pulsars.html">Pulsar Signal Processing with ORT</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="img_xrb.jpg" alt="X-ray Binaries" />
+        <div class="project-title">
+          <a href="project-xrb.html">Introductory Study of X-ray Binaries</a>
+        </div>
+      </div>
+
     </section>
   </main>
 
