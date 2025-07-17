@@ -53,11 +53,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
+    margin-top: 80px;  /* Pushes the content below navbar */
     padding: 0 10%;
-    color: white;
     gap: 60px;
+    color: white;
+    flex-wrap: nowrap;
   }
+
 
   .photo-placeholder {
     width: 220px;
@@ -83,10 +86,11 @@
 
   @media (max-width: 768px) {
     .container {
-      flex-direction: column;
-      text-align: center;
-      padding-top: 40px;
-    }
+    flex-direction: column;
+    margin-top: 120px;
+    text-align: center;
+  }
+
 
     .bio-text {
       text-align: center;
