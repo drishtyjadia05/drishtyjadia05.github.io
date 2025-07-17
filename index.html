@@ -53,28 +53,22 @@
       align-items: center;
       padding: 80px 5% 40px 5%;
       color: white;
-      gap: 60px;
+      gap: 100px;
       flex-wrap: nowrap;
     }
 
-    .photo-placeholder {
-      width: 220px;
-      height: 220px;
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      color: #ccc;
+    .profile-photo {
+      width: 250px;
+      height: auto;
       border: 2px solid white;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
       flex-shrink: 0;
     }
 
+
     .bio-text {
-      font-size: 1.3rem;
-      line-height: 1.8;
+      font-size: 1.45rem;
+      line-height: 1.9;
       flex-grow: 1;
       max-width: 700px;
       text-align: left;
@@ -83,11 +77,14 @@
     @media (max-width: 768px) {
       .container {
         flex-direction: column;
-        text-align: center;
         padding-top: 100px;
+        text-align: center;
+        gap: 40px;
       }
 
       .bio-text {
+        font-size: 1.2rem;
+        line-height: 1.7;
         text-align: center;
       }
     }
@@ -109,7 +106,7 @@
   </header>
 
   <main class="container">
-    <div class="photo-placeholder">PHOTO</div>
+    <img src="sample.jpg" alt="Drishty Jadia" class="profile-photo" />
     <div class="bio-text">
       <p>
         I’m Drishty Jadia, a physics student from IIT Kanpur with a deep curiosity about the universe and the tools we use to study it. Over the past few years, I’ve found myself drawn toward the skies — not just figuratively, but through work in radio astronomy, high-energy astrophysics, and citizen science.
